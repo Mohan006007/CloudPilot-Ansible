@@ -4,8 +4,8 @@ Automate EC2 provisioning and OS-specific instance management using Ansible.
 
 ## 🚀 Features
 
-- Launch 2 Ubuntu + 1 Amazon Linux EC2 instances (with Ansible loops)
-- Set up passwordless SSH access from control node
+- Launch 2 Ubuntu + 1 Amazon Linux EC2 instances (using Ansible loops)
+- Configure passwordless SSH from control node
 - Conditionally shut down only Ubuntu instances using Ansible facts
 
 ## 🔧 Tech Stack
@@ -18,6 +18,6 @@ Automate EC2 provisioning and OS-specific instance management using Ansible.
 ## 📦 Usage
 
 ```bash
-ansible-playbook create_ec2_instances.yml
+ansible-playbook ec2_create.yml
 ansible-playbook setup_ssh.yml
-ansible-playbook shutdown_ubuntu.yml
+ansible-playbook ec2_stop.yml
