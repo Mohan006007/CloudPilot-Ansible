@@ -22,7 +22,7 @@ Automate EC2 instance provisioning and OS-specific management using Ansible on A
 ansible-playbook ec2_create.yml
 
 # Enable passwordless SSH (run for each instance)
-ssh-copy-id -f "-o IdentityFile=<PATH TO PEM FILE>" ubuntu@<INSTANCE-PUBLIC-IP>
+ssh-copy-id -f "-o IdentityFile=<PATH TO PEM FILE>" ec2-user@<INSTANCE-PUBLIC-IP>
 
 # Shutdown only Ubuntu instances
 ansible-playbook ec2_stop.yml
