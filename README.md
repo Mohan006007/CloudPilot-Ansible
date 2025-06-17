@@ -27,4 +27,4 @@ ssh-copy-id -f "-o IdentityFile=<PATH TO PEM FILE>" ubuntu@<INSTANCE-PUBLIC-IP>
 # Shutdown only Ubuntu instances
 ansible-playbook ec2_stop.yml
 ```
-### This project demonstrates real-world infrastructure automation using Ansible on AWS. It provisions EC2 instances with distribution-specific logic using loops and conditionals. SSH access is manually configured for secure communication, and Ansible facts are leveraged to manage OS-specific behavior (shutting down only Ubuntu nodes). The project showcases modular, reusable automation ideal for DevOps and cloud provisioning tasks.
+#### This project demonstrates real-world infrastructure automation using Ansible on AWS. It provisions EC2 instances with distribution-specific logic using loops and conditionals. SSH access is manually configured for secure communication, and Ansible facts are leveraged to manage OS-specific behavior (shutting down only Ubuntu nodes). The project showcases modular, reusable automation ideal for DevOps and cloud provisioning tasks.
